@@ -34,7 +34,9 @@ app.get('/', (req, res) => {
     res.json({ message: 'Hello, welcome to your Express API!' });
   });
   
-
+app.get('/deploy', (req, res) => {
+    res.json({ message: 'Hello, Successfully Deploy!' });
+});
 // Start the server
 app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`);
